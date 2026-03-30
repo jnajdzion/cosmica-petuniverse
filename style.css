@@ -1,0 +1,84 @@
+/* Arquivo CSS da fase 2 otimizada */
+/* Objetivo: melhorar experiência do usuário, legibilidade e feedback visual. */
+
+body {
+    background-color: #f8f9fb;
+}
+
+header,
+footer {
+    background: linear-gradient(90deg, #1f2940, #3b4e77);
+}
+
+.imagem-carrossel {
+    height: 420px;
+    object-fit: cover;
+}
+
+.fundo-legenda {
+    background-color: rgba(0, 0, 0, 0.48);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.imagem-produto {
+    height: 260px;
+    object-fit: cover;
+}
+
+.sombra-suave {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+legend {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+h2, h3, h4 {
+    color: #25365d;
+}
+
+.btn-primary,
+.btn-success {
+    min-width: 180px;
+}
+
+.btn-loading {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.campo-erro {
+    border: 2px solid #dc3545 !important;
+}
+
+.campo-sucesso {
+    border: 2px solid #198754 !important;
+}
+
+.texto-ajuda {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .imagem-carrossel {
+        height: 260px;
+    }
+
+    .imagem-produto {
+        height: 220px;
+    }
+}

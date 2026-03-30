@@ -1,113 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cósmica - PetUniverse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cósmica - PetUniverse | Fase 2</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabeçalho principal -->
+    <header class="bg-dark text-white">
+        <div class="container py-4">
+            <h1 class="mb-1">Cósmica - PetUniverse</h1>
+            <p class="mb-3">Um universo de cuidado, carinho e bem-estar para o seu pet.</p>
 
-<header id="inicio">
-<h1>Cósmica - PetUniverse</h1>
-<p>Um universo de cuidado, carinho e bem-estar para o seu pet.</p>
+            <nav class="navbar navbar-expand-lg navbar-dark p-0" aria-label="Menu principal">
+                <div class="container-fluid px-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-<nav>
-<a href="#inicio">Início</a> |
-<a href="#acessorios">Acessórios</a> |
-<a href="#racoes">Rações</a> |
-<a href="#higiene">Higiene</a> |
-<a href="#servicos">Serviços</a> |
-<a href="#contato">Contato</a>
-</nav>
-<hr>
-</header>
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <ul class="navbar-nav gap-lg-2">
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                            
+                            
+                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li><li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<main>
+    <main>
+        <!-- Carrossel -->
+        <section id="inicio" aria-label="Destaques da página">
+            <div id="carouselPetshop" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPetshop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPetshop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselPetshop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
 
-<section>
-<h2>Apresentação do Petshop</h2>
-<p>A Cósmica - PetUniverse é uma plataforma online de petshop que apresenta produtos e serviços para animais de estimação.</p>
-<p>O site exibe produtos de acessórios, rações não perecíveis e higiene e limpeza, além de serviços de banho e tosa.</p>
-</section>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/acessorios.png" class="d-block w-100 imagem-carrossel" alt="Cama acolchoada para pet, representando a categoria de acessórios da loja.">
+                        <div class="carousel-caption d-md-block fundo-legenda">
+                            <h2>Acessórios para conforto</h2>
+                            <p>Camas e brinquedos para deixar seu pet feliz e confortável.</p>
+                        </div>
+                    </div>
 
-<hr>
+                    <div class="carousel-item">
+                        <img src="imagens/racoes.png" class="d-block w-100 imagem-carrossel" alt="Embalagem de ração para cães, representando a categoria de rações não perecíveis.">
+                        <div class="carousel-caption d-md-block fundo-legenda">
+                            <h2>Rações não perecíveis</h2>
+                            <p>Alimentação prática e nutritiva para cães e gatos.</p>
+                        </div>
+                    </div>
 
-<section id="acessorios">
-<h2>Acessórios</h2>
+                    <div class="carousel-item">
+                        <img src="imagens/higiene.png" class="d-block w-100 imagem-carrossel" alt="Frasco de shampoo pet, representando a categoria de higiene e limpeza.">
+                        <div class="carousel-caption d-md-block fundo-legenda">
+                            <h2>Higiene e cuidado</h2>
+                            <p>Produtos e serviços para o bem-estar do seu pet.</p>
+                        </div>
+                    </div>
+                </div>
 
-<h3>Cama Cósmica Comfort</h3>
-<img src="imagens/cama.jpg" width="200">
-<p>Cama confortável para cães.</p>
-<p>Valor: R$ 89,90</p>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPetshop" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPetshop" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
 
-<h3>Brinquedo Galaxy Ball</h3>
-<img src="imagens/brinquedo.jpg" width="200">
-<p>Brinquedo interativo para pets.</p>
-<p>Valor: R$ 29,90</p>
-</section>
+        <section class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-8">
+                    <h2>Sobre a Cósmica - PetUniverse</h2>
+                    <p>
+                        A Cósmica - PetUniverse é uma plataforma online de petshop criada para apresentar produtos
+                        e serviços de forma mais dinâmica, organizada e atrativa. Nesta fase, o sistema evoluiu
+                        com o uso de CSS, Bootstrap e JavaScript.
+                    </p>
+                    <p>
+                        Agora a página conta com carrossel, cards de produtos, formulários para cadastro do cliente
+                        e do pet, área de agendamento e recursos básicos de acessibilidade, como textos alternativos
+                        nas imagens e estrutura semântica com rótulos nos campos do formulário.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<hr>
+        <!-- Produtos -->
+        <section id="produtos" class="container py-5">
+            <h2 class="mb-4">Produtos</h2>
 
-<section id="racoes">
-<h2>Rações Não Perecíveis</h2>
+            <h3 class="mb-3">Acessórios</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <img src="imagens/cama.png" class="card-img-top imagem-produto" alt="Cama acolchoada para pet em tons neutros, indicada para descanso de cães e gatos.">
+                        <div class="card-body">
+                            <h4 class="card-title">Cama Cósmica Comfort</h4>
+                            <p class="card-text">Cama acolchoada e confortável para cães de pequeno e médio porte.</p>
+                            <p class="fw-bold">Valor: R$ 89,90</p>
+                        </div>
+                    </article>
+                </div>
 
-<h3>Ração SpaceDog</h3>
-<img src="imagens/racao-cachorro.jpg" width="200">
-<p>Ração seca para cães adultos.</p>
-<p>Valor: R$ 119,90</p>
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <img src="imagens/brinquedo.png" class="card-img-top imagem-produto" alt="Bola vermelha para pet, usada como brinquedo interativo para diversão e atividade física.">
+                        <div class="card-body">
+                            <h4 class="card-title">Brinquedo Galaxy Ball</h4>
+                            <p class="card-text">Brinquedo interativo para estimular diversão, movimento e entretenimento.</p>
+                            <p class="fw-bold">Valor: R$ 29,90</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
-<h3>Ração NutriCat Estelar</h3>
-<img src="imagens/racao-gato.jpg" width="200">
-<p>Ração seca para gatos.</p>
-<p>Valor: R$ 79,90</p>
-</section>
+            <h3 class="mb-3">Rações não perecíveis</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <img src="imagens/racao-cachorro.png" class="card-img-top imagem-produto" alt="Embalagem de ração para cães adultos da linha SpaceDog.">
+                        <div class="card-body">
+                            <h4 class="card-title">Ração SpaceDog</h4>
+                            <p class="card-text">Ração seca premium para cães adultos, rica em nutrientes essenciais.</p>
+                            <p class="fw-bold">Valor: R$ 119,90</p>
+                        </div>
+                    </article>
+                </div>
 
-<hr>
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <img src="imagens/racao-gato.png" class="card-img-top imagem-produto" alt="Embalagem de ração para gatos da linha NutriCat Estelar.">
+                        <div class="card-body">
+                            <h4 class="card-title">Ração NutriCat Estelar</h4>
+                            <p class="card-text">Ração seca para gatos com fórmula equilibrada para a alimentação diária.</p>
+                            <p class="fw-bold">Valor: R$ 79,90</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
-<section id="higiene">
-<h2>Higiene e Limpeza</h2>
+            <h3 class="mb-3">Higiene e limpeza</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <img src="imagens/tapete.png" class="card-img-top imagem-produto" alt="Tapete higiênico branco para pets, usado para absorção e controle de odores.">
+                        <div class="card-body">
+                            <h4 class="card-title">Tapete Higiênico AstroClean</h4>
+                            <p class="card-text">Tapete higiênico com alta absorção, praticidade e controle de odores.</p>
+                            <p class="fw-bold">Valor: R$ 49,90</p>
+                        </div>
+                    </article>
+                </div>
 
-<h3>Tapete Higiênico AstroClean</h3>
-<img src="imagens/tapete.jpg" width="200">
-<p>Tapete higiênico absorvente.</p>
-<p>Valor: R$ 49,90</p>
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <img src="imagens/shampoo.png" class="card-img-top imagem-produto" alt="Frasco de shampoo pet azul claro para limpeza suave e segura dos pelos.">
+                        <div class="card-body">
+                            <h4 class="card-title">Shampoo Pet Estelar</h4>
+                            <p class="card-text">Shampoo neutro para limpeza suave, cheiro agradável e cuidado diário.</p>
+                            <p class="fw-bold">Valor: R$ 24,90</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<h3>Shampoo Pet Estelar</h3>
-<img src="imagens/shampoo.jpg" width="200">
-<p>Shampoo neutro para pets.</p>
-<p>Valor: R$ 24,90</p>
-</section>
+        <!-- Serviços -->
+        <section id="servicos" class="container py-5">
+            <h2 class="mb-4">Serviços da Cósmica - PetShop</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <div class="card-body">
+                            <h3 class="h4">Banho e tosa sem tele-busca</h3>
+                            <p>Serviço realizado no petshop. O tutor leva e busca o pet no local.</p>
+                            <p class="fw-bold">Valor: R$ 60,00</p>
+                            <p class="mb-0"><strong>Tele-busca:</strong> Não</p><a href="agendamento.html" class="btn btn-primary mt-2">Agendar</a>
+                        </div>
+                    </article>
+                </div>
 
-<hr>
+                <div class="col-md-6">
+                    <article class="card h-100 sombra-suave">
+                        <div class="card-body">
+                            <h3 class="h4">Banho e tosa com tele-busca</h3>
+                            <p>Serviço com agendamento para coleta e devolução do pet no endereço informado.</p>
+                            <p class="fw-bold">Valor: R$ 80,00</p>
+                            <p class="mb-0"><strong>Tele-busca:</strong> Sim</p><a href="agendamento.html" class="btn btn-primary mt-2">Agendar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="servicos">
-<h2>Serviços</h2>
+        <section id="contato" class="container py-5">
+            <h2>Contato</h2>
+            <p><strong>Telefone:</strong> (51) 99999-9999</p>
+            <p><strong>E-mail:</strong> contato@cosmicapetuniverse.com</p>
+            <p><strong>Endereço:</strong> Rua das Estrelas, 200 - Porto Alegre/RS</p>
+            <p><strong>Horário de atendimento:</strong> Segunda a sábado, das 9h às 18h</p>
+        </section>
+    </main>
 
-<h3>Banho e tosa sem tele-busca</h3>
-<p>O tutor leva e busca o pet no petshop.</p>
-<p>Valor: R$ 60,00</p>
+    <footer class="bg-dark text-white mt-4">
+        <div class="container py-4">
+            <p class="mb-1">Autoria: Júlia Najdzion</p>
+            <p class="mb-1">Contato: contato@cosmicapetuniverse.com</p>
+            <p class="mb-1">Projeto acadêmico da disciplina de Fundamentos de Sistemas Web.</p>
+            <p class="mb-0">&copy; <span id="anoAtual">2026</span> Cósmica - PetUniverse</p>
+        </div>
+    </footer>
 
-<h3>Banho e tosa com tele-busca</h3>
-<p>O pet é buscado e devolvido na casa do cliente.</p>
-<p>Valor: R$ 80,00</p>
-</section>
-
-<hr>
-
-<section id="contato">
-<h2>Contato</h2>
-<p>Telefone: (51) 99999-9999</p>
-<p>Email: contato@cosmicapetuniverse.com</p>
-<p>Endereço: Rua das Estrelas, 200 - Porto Alegre/RS</p>
-</section>
-
-</main>
-
-<footer>
-<hr>
-<p>Autoria: Júlia Najdzion</p>
-<p>&copy; 2026 Cósmica - PetUniverse</p>
-</footer>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
